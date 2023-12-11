@@ -16,6 +16,7 @@ html {
   position: fixed;
   height: 100vh;
   width: 30px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,7 +27,7 @@ html {
   z-index: 70;
 }
 
-#x{
+#x, #git{
   background-color: #0F0;
   border-radius: 5px;
 }
@@ -283,22 +284,22 @@ footer{
 }
 
 @media (max-width: 700px) {
-
+/* response de redes sociales */
 #redes{
   width: 25px;
   display: grid;
   align-content: center;
-  gap: 40px;
+  gap: 30px;
   padding-left: 18px;
   background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4864320728291317) 18%);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4864320728291317) 18%);
 }
  
 img{
   width: 20px;
   height: 20px;
 }
-
+/* response de services */
 #services {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
