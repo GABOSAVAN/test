@@ -401,3 +401,6 @@ footer{
   box-shadow: 3px 1px 10px rgba(189, 165, 165, 0.5);
 }
 
+#goback, #volver a{
+  font-size: 30px;
+}
