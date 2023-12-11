@@ -2,24 +2,145 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parallax Effect</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>Gabriel Navas</title>
 </head>
 <body>
-  
-  <main>
-    <section class="no-parallax">
-      <h1>¡Hola a todos!</h1>
-    </section>
-    <section class="parallax bg">
-      <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quibusdam!</h1>
-    </section>
-    <section class="no-parallax">
-      <h1>Suscríbete</h1>
-    </section>
-  </main>
-  
+    <main>
+
+        <!-- barra de menu -->
+        <div id="menu">
+              <ul id="gabo">
+                  <a href="#about">
+                    <span id="element1"></span>
+                  </a>
+              </ul>
+              <ul class="btn"><a href="#about">About</a></ul>
+              <ul class="btn"><a href="#services">Services</a></ul>
+              <ul class="btn"><a href="#contact">Contact</a></ul>
+        </div>
+
+        <div id="redes">
+          <a href="https://www.facebook.com/gabriel.navas.165/">
+            <img src="assets/facebook.png" alt="facebook"></a>
+          <a href="https://twitter.com/GABONAVAS">
+            <img id="x" src="assets/x.png" alt="x">
+          </a>
+          <a href="https://www.instagram.com/gabonavas/">
+            <img src="assets/instagram.png" alt="instagram">
+          </a>
+          <a href="https://www.tiktok.com/@gabosavanx">
+            <img src="assets/tiktok .png" alt="tiktok">
+          </a>
+          <a href="https://www.youtube.com/channel/UCUqBSfELr2hv3vmeoccR81g">
+            <img src="assets/youtube.png" alt="youtube">
+          </a>
+          <a href="https://www.linkedin.com/in/gabriel-navas-a86788162/">
+            <img src="assets/linkedin.png" alt="linkdin">
+          </a>
+        </div>
+
+        <!-- fondo de matrix -->
+        <div id="bg">
+          <canvas id="Matrix"></canvas>
+        </div>
+      
+        <!-- seccion about con texto efecto writting -->
+        <div id="about" class="container">
+               <!-- Element to contain animated typing -->
+              <span id="element"></span>
+        </div>
+      
+        <!-- seccion de servicios -->
+        <div id="services" class="container">  
+
+              <div id="webtext" class="subsec"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> <dotlottie-player src="https://lottie.host/a157fd51-e419-46b5-9ff4-4dfbdb50689d/CRJSOvRWcJ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player></div>
+              <!-- primer texto -->
+              <div id="webimg" class="subsec">
+                  <!-- Element to contain animated typing -->
+                          <span id="elementtest"></span>
+
+                          <!-- Load library from the CDN -->
+                          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+                          <!-- Setup and start animation! -->
+                          <script>
+                            var typed = new Typed('#elementtest', {
+                                strings: ['Web development ^3000', 'Desarrollo web ^3000'],
+                                typeSpeed: 100,
+                                // startDelay: 5000,
+                                loop:true,
+                                smartBackspace: true,
+                              });
+                            </script></div>
+              
+              <!-- segundo texto -->
+              <div id="dbimg" class="subsec">
+                          <span id="elementdt"></span>
+
+                          <!-- Load library from the CDN -->
+                          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+                          <!-- Setup and start animation! -->
+                          <script>
+                            var typed = new Typed('#elementdt', {
+                                strings: ['Data engineering ^3000', 'Ingenieria de datos ^3000'],
+                                typeSpeed: 100,
+                                // startDelay: 5000,
+                                loop:true,
+                                smartBackspace: true,
+                              });
+                            </script></div>
+
+              <div id="dbtext" class="subsec"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> <dotlottie-player src="https://lottie.host/740ca9d2-093e-4cff-ba4a-b4ee685a08f7/YEiBH4lIyL.json" background="transparent" speed="1" style="width: 350px; height: 350px;" loop autoplay></dotlottie-player></div>
+              
+              <div id="etltext" class="subsec"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> <dotlottie-player src="https://lottie.host/f15c6de0-bda9-44e6-8716-44602f3d2f61/BA8AvnAofa.json" background="transparent" speed="1" style="width: 250px; height: 250px;" loop autoplay></dotlottie-player></div>
+              <!-- tercer texto -->
+              <div id="etlimg" class="subsec">
+                <span id="elementtd"></span>
+
+                <!-- Load library from the CDN -->
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+                <!-- Setup and start animation! -->
+                <script>
+                  var typed = new Typed('#elementtd', {
+                      strings: ['Backend development ^3000', 'Api Restful ^3000'],
+                      typeSpeed: 100,
+                      // startDelay: 5000,
+                      loop:true,
+                      smartBackspace: true,
+                    });
+                  </script></div>
+
+        </div>
+
+        <!-- formulario de contacto -->
+        <div id="contact" class="container">
+          <!-- formulario -->
+          <div id="boxform">
+            <h2>Contact</h2>
+            <form action="https://formsubmit.co/f2a3c52b792a3220d0a0fc2573d8a222" method="POST">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="example@yourDomainMail"  maxlength="50" required>
+                <label>Subject</label>
+                <input type="text" name="subject" placeholder="Your business" maxlength="50" required>
+                <label>Description</label>
+                <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Describe your business..." maxlength="500" required></textarea>
+                <input class="submit" type="submit" value="Send">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://www.gabrielnavas.tech/request.html">
+
+              </form>
+        </div>
+        <footer>Gabriel Navas® All rights reserved 2023</footer>
+        </div>
+
+        
+        <!-- Load library from the CDN -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="index.js"></script>
+    </main>
 </body>
 </html>
