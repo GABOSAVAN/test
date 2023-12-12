@@ -91,7 +91,7 @@ img{
   justify-content: flex-end;
 }
 
-#webimg, #etlimg{
+#webimg, #etlimg, #dbtext{
   display: flex;
   justify-content: flex-start;
 }
@@ -247,7 +247,7 @@ input, textarea{
 }
 
 textarea{
-  height: 900px;
+  height: 250px;
 }
 
 :focus{
@@ -312,10 +312,10 @@ img{
   width: 100%;
 }
   /* orden responsive seccion services */
-#webtext { order: 2; }
+#webtext { order: 2; display: flex; justify-content: center;}
 #webimg { order: 1; display: flex; justify-content: center;}
-#dbimg{ order: 3;}
-#dbtext{ order: 4;}
+#dbimg{ order: 3;display: flex; justify-content: center;}
+#dbtext{ order: 4;display: flex; justify-content: center;}
 #etltext{order: 6; display: flex; justify-content: center;}
 #etlimg{order: 5; display: flex; justify-content: center;}
 
@@ -338,7 +338,7 @@ a{
 }
 
 #boxform{
-  width: 90%;  
+  width: 400px; 
 }
 
 #contact{
